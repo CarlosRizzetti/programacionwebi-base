@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Max Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+/* Header Component */
+.header {
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+.header__nav .header__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.header__nav .header__list .header__listItem {
+  padding-left: 2px;
+}
+
+.header .header__actions {
+  margin-left: auto;
+}
+
+.header img {
+  height: 30px;
+  margin-right: 1rem;
+  width: 110.63px;
+}
+/* Header Component */
+
+/* Button Component */
+.btn {
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: rgba(64, 68, 89, 0.6);
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 24px;
+}
+
+.btn-secondary:hover {
+  background-color: hsla(0, 0%, 100%, 0.75);
+}
+/* Button Component */
