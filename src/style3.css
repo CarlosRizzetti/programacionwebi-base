@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-template-areas: "cabecera cabecera cabecera"
+                         "menu centro centro"
+                         "pie pie pie";
+}
+
+.area-cabecera{
+    grid-area: cabecera;
+}
+.area-menu{
+    grid-area: menu;
+}
+.area-centro{
+    grid-area: centro;
+}
+.area-pie{
+    grid-area: pie;
+}
