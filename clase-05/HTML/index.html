@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5 - Clase 2</title>
+    <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="./styles/main.css" type="text/css" />
   </head>
   <body>
     <header class="header">
-      <img src="./img/max_logo_nav.png" alt="Max Logo" />
+      <a href="./index.html">
+        <img src="./img/max_logo_nav.png" alt="Max Logo" />
+      </a>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__listItem">
@@ -68,12 +71,17 @@
               titánica! Godzilla y Kong enfrentan a un colosal enemigo de Tierra
               Hueca, que amenaza su existencia y la nuestra.
             </p>
-            <a class="btn btn--secondary" href="">Suscríbete ahora</a>
+            <a class="btn btn--secondary" href="./pages/movie-details.html"
+              >Ver ahora</a
+            >
+            <a class="btn btn--secondary" href="./pages/serie-details.html"
+              >Ver serie</a
+            >
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="contact-form">
         <article>
           <h3>Formulario de contacto</h3>
           <form method="get">
@@ -134,7 +142,7 @@
               id="comments"
               name="comments"
               rows="8"
-              cols="50"
+          
               placeholder="Comentarios"
             ></textarea>
             <br />
@@ -156,38 +164,25 @@
         </article>
       </section>
 
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          recusandae praesentium odio nisi, hic perspiciatis deleniti? Beatae,
-          excepturi odit? Optio iusto nulla aliquid nisi voluptatum qui
-          mollitia, ex omnis quibusdam?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          recusandae praesentium odio nisi, hic perspiciatis deleniti? Beatae,
-          excepturi odit? Optio iusto nulla aliquid nisi voluptatum qui
-          mollitia, ex omnis quibusdam?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          recusandae praesentium odio nisi, hic perspiciatis deleniti? Beatae,
-          excepturi odit? Optio iusto nulla aliquid nisi voluptatum qui
-          mollitia, ex omnis quibusdam?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-          recusandae praesentium odio nisi, hic perspiciatis deleniti? Beatae,
-          excepturi odit? Optio iusto nulla aliquid nisi voluptatum qui
-          mollitia, ex omnis quibusdam?
-        </p>
-
-        <ul>
-          <li>Home</li>
-          <li class="primary text">Productos</li>
-          <li class="text">Contacto</li>
-          <li>Medios de pago</li>
-        </ul>
+      <section class="info">
+        <div class="info__content">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vyq1FCeFrng?si=5rPGIrpR89MM4C4f"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="info__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos velit
+            nam, at, ipsa dignissimos quisquam error, nesciunt asperiores totam
+            rerum unde assumenda nemo iste quibusdam quae incidunt repellat
+            veniam? Nisi?
+          </div>
+        </div>
       </section>
     </main>
 

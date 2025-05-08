@@ -1,0 +1,61 @@
+main {
+  height: calc(100vh - 93px);
+  overflow-y: auto;
+}
+
+.info {
+  padding-bottom: 60px;
+}
+
+/* Hero Component */
+.hero-banner {
+  position: relative;
+}
+
+.hero-banner__container {
+  max-width: 1140px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 32px;
+  left: 20%;
+}
+
+.hero-banner__info {
+  max-width: 50%;
+  color: #ffffff;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
+
+.hero-banner__container .hero-banner__info img {
+  max-width: 370px;
+  margin-bottom: 16px;
+}
+
+.hero-banner__container .hero-banner__info ul.hero-banner__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.hero-banner__info p {
+  font-size: 18px;
+  line-height: 28.8px;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+/* Hero Component */
+
+@media screen and (max-width: 576px) {
+  main {
+    height: auto;
+    overflow-y: auto;
+  }
+}

@@ -6,6 +6,8 @@ body {
   font-family: Max Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Header Component */
@@ -16,7 +18,7 @@ body {
   padding: 0.5rem 1rem;
   /* position: fixed; */
   /* width: 100%;
-  box-sizing: border-box; */
+    box-sizing: border-box; */
 }
 
 .header__nav .header__list {
@@ -70,56 +72,6 @@ body {
 }
 /* Button Component */
 
-main {
-  height: calc(100vh - 93px);
-}
-
-/* Hero Component */
-.hero-banner {
-  position: relative;
-}
-
-.hero-banner__container {
-  max-width: 1140px;
-  display: block;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 32px;
-  left: 20%;
-}
-
-.hero-banner__info {
-  max-width: 50%;
-  color: #ffffff;
-  box-sizing: border-box;
-  margin-bottom: 32px;
-}
-
-.hero-banner__container .hero-banner__info img {
-  max-width: 370px;
-  margin-bottom: 16px;
-}
-
-.hero-banner__container .hero-banner__info ul.hero-banner__list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 16px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-
-.hero-banner__info p {
-  font-size: 18px;
-  line-height: 28.8px;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
-}
-/* Hero Component */
-
 /* Footer Component */
 .footer {
   background-color: #000000;
@@ -131,4 +83,37 @@ main {
   box-sizing: border-box;
   position: fixed;
   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .header .header__nav,
+  .header .header__actions .btn--primary {
+    display: none;
+  }
+  
+  .hero-banner .hero-banner__container {
+    position: static;
+    padding: 0 1em 2em;
+  }
+
+  .hero-banner .hero-banner__info {
+    width: 100%;
+    max-width: none;
+  }
+
+  .contact-form {
+    padding: 2em 1em;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    position: static;
+    padding: 2em 1em;
+    height: auto;
+    text-align: center;
+  }
 }
